@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ej7</title>
+</head>
+<body>
+	<h1>FORMULARIOS</body></h1>
+	<hr>
+	<form action="https://lm.ciclo.iesnervion.es/" method="post">
+		<fieldset>
+			<legend><b>TU RECETA</b></legend>
+			<label for="nombre"><b> Nombre de la receta:</b> </label>
+			<input name="nombre" id="nombre" type="text"><br>
+			<label for="correo"><b>Correo:</b></label><span style="color: red">*</span>
+			<input placeholder="ejemplo@gmail.com" type="email" name="correo" id="correo" required><br></br>
+			<label for="momento"><b>¿Cuándo lo comerías?</b></label><br>
+			<input name="momento[]" type="checkbox" value="desayuno"> Desayuno<br>
+			<input name="momento[]" type="checkbox" value="almuerzo"> Almuerzo<br>
+			<input name="momento[]" type="checkbox" value="merienda"> Merienda<br>
+			<input name="momento[]" type="checkbox" value="cena"> Cena<br>
+			<input name="momento[]" type="checkbox" value="postre"> Postre<br></br>
+			<label for="ingredientes"><b>Ingredientes:</b></label><br>
+			<select multiple name="ingredientes[]">
+				<optgroup label="-Carnes-">
+					<option value="Pollo">Pollo</option>
+					<option value="Cerdo">Cerdo</option>
+					<option value="Vacuno">Vacuno</option>
+				</optgroup>
+				<optgroup label="-Pescados-">
+					<option value="Salmón">Salmón</option>
+					<option value="Atún">Atún</option>
+					<option value="Merluza">Merluza</option>
+				</optgroup>
+				<optgroup label="-Frutas-">
+					<option value="Melocotón">Melocotón</option>
+					<option value="Manzana">Manzana</option>
+					<option value="Plátano">Plátano</option>
+				</optgroup>
+				<optgroup label="-Verdura-">
+					<option value="Calabacín">Calabacín</option>
+					<option value="Pimiento">Pimiento</option>
+					<option value="Apio">Apio</option>
+				</optgroup>
+			</select>
+			<p><b>Tiempo de preparación:</b> </p>
+			<input type="radio" name="horas" value="0">0 horas
+			<input type="radio" name="horas" value="1">1 horas
+			<input type="radio" name="horas" value="2">2 horas<br>
+			<input type="radio" name="minutos" value="15">15 min
+			<input type="radio" name="minutos" value="30">30 min
+			<input type="radio" name="minutos" value="45">45 min<br></br>
+			<input type="file" id="foto" name="foto"></fieldset><br>
+			<button type="submit">Enviar</button>
+			<button type="reset">Borrar todo</button>
+		</fieldset>		
+	</form>
+</body>
+</html>
